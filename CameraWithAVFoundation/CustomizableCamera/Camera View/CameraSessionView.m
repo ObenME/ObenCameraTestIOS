@@ -414,6 +414,27 @@
     CGSize frameSize = self.bounds.size;
     pointOfInterest = CGPointMake(point.y / frameSize.height, 1.f - (point.x / frameSize.width));
     
+    
+    UIAlertController * alert = [UIAlertController
+                                    alertControllerWithTitle:@"point of interest"
+                                    message:NSStringFromCGPoint(pointOfInterest)
+                                    preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* yesButton = [UIAlertAction actionWithTitle:@"Yes, please"
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction * action)
+    {
+       
+        NSLog(@"you pressed Yes, please button");
+
+    }];
+
+    
+    [alert addAction:yesButton];
+
+    [self.parentController presentViewController:alert animated:YES completion:nil];
+ 
+    
     if ([device isFocusPointOfInterestSupported] && [device isFocusModeSupported:AVCaptureFocusModeAutoFocus]) {
         
         //Lock camera for configuration if possible

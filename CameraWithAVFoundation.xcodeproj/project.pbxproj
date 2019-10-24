@@ -313,12 +313,18 @@
 				CLASSPREFIX = Camera;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Gabriel Alvarado";
+				TargetAttributes = {
+					64ABD10918FF19E000B2E420 = {
+						DevelopmentTeam = HZ32KGWJ68;
+					};
+				};
 			};
 			buildConfigurationList = 64ABD10518FF19E000B2E420 /* Build configuration list for PBXProject "CameraWithAVFoundation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -490,6 +496,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HZ32KGWJ68;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraWithAVFoundation/CameraWithAVFoundation-Prefix.pch";
 				INFOPLIST_FILE = "CameraWithAVFoundation/CameraWithAVFoundation-Info.plist";
@@ -513,6 +520,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HZ32KGWJ68;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraWithAVFoundation/CameraWithAVFoundation-Prefix.pch";
 				INFOPLIST_FILE = "CameraWithAVFoundation/CameraWithAVFoundation-Info.plist";

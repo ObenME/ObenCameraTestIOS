@@ -20,6 +20,8 @@
 //Delegate Property
 @property (nonatomic, weak) id <CACameraSessionDelegate> delegate;
 
+@property (nonatomic, weak) UIViewController *parentController;
+
 //API Functions
 - (void)setTopBarColor:(UIColor *)topBarColor;
 - (void)hideFlashButton;

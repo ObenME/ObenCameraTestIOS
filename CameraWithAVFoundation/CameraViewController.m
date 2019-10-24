@@ -30,6 +30,7 @@
     
     //Instantiate the camera view & assign its frame
     _cameraView = [[CameraSessionView alloc] initWithFrame:self.view.frame];
+    _cameraView.parentController = self;
     
     //Set the camera view's delegate and add it as a subview
     _cameraView.delegate = self;
